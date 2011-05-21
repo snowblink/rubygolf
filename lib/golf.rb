@@ -23,5 +23,13 @@ class Golf
       }
     end
 
+    def hole5(list)
+      result = []
+      (1..list.length).each do |i|
+        list.each_cons(i) {|a| result << a}
+      end
+      result
+    end
+
   end
 end
