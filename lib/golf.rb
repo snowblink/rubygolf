@@ -30,6 +30,20 @@ class Golf
       end
       result
     end
+    
+    def hole6(fizzbuzz)
+      (1..fizzbuzz).map {|a|
+        if a.remainder(3.0) == 0 && a.remainder(5.0) == 0
+          "fizzbuzz"
+        elsif a.remainder(3.0) == 0
+          "fizz"
+        elsif a.remainder(5.0) == 0
+          "buzz"
+        else
+          a
+        end
+      }
+    end
 
   end
 end
